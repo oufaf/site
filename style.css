@@ -1,0 +1,184 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114221.jpg?t=st=1744402411~exp=1744406011~hmac=7babc9bd439d5b9b4f83897992d9b11cd2b07f5074afd3cea8baf1cbd5a63235&w=996');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    background: #2e2e39;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    height: 400px;
+    background-image: url('https://img.freepik.com/free-vector/fitness-gym-interior-background-room-with-sport-equipment-workouts-treadmill-bike-dumbbells-barbell-water-cooler-mat-floor_575670-1344.jpg?t=st=1744447746~exp=1744451346~hmac=5c62bc85c393c621911f7132a9132add2fd6156d37b75e9e9b741248308e4f44&w=1380');
+    no-repeat: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    padding: 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.products {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.product-img-container {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    background: #f5f5f5;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-price {
+    color: #e74c3c;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    background-color: #2e2e39;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    width: 60%;
+    text-align: center;
+    max-width: 200px;
+    margin-top: 15px;
+    display: block;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2e2e39;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #2e2e39;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+  @media (max-width: 480px) {
+    .add-to-cart-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
